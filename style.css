@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --black: #201E1F;       
+    --orange: #FE4001;
+    --yellow: #F4B50F;
+    --white: #FEEFDC;
+    --blue: #50B1C1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--black);
+}
+
+.tela1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    background-color: var(--orange);
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+  
+.navigation{
+  padding: 4px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 100%;
+}
+
+.navigation img {
+   margin-right: 160px;
+   cursor: pointer;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 40px;
+  gap: 120px;
+}
+.navigation ul li a {
+  color: #fff;
+  word-break: keep-all;
+  font-size: 1.2rem;
+  transition: all .1s ease;
+}
+  
+.navigation ul li a:hover {
+  border-bottom: 4px solid var(--white);
+  padding-bottom: 13px;
+}
+
+.title {
+    color: var(--yellow);
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.subject {
+    color: var(--blue);
+    word-wrap: break-word;
+    width: 550px;
+    font-size: 20px;
+}
+.parte1 {
+   
+   height: 100%;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.parte2 {
+   height: 100%;
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* QUEBRA */
+
+.quebra {
+   height: 20vh;
+   width: 100%;
+   background-image: url(img/henrique.png);
+}
+
+/* TELA 2 */
+.tela2{
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   height: 100vh;
+   margin-top: 150px;
+}
+
+.valores {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 70px;
+}
+
+.valores:hover {
+    transition: all .1s ease;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.tela-flutuante {
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+
+.wrapper {
+    width: 100vw;
+    margin: 0 auto;
+    height: 400px;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+ 
+@media screen and (max-width: 767px) {
+    .wrapper {
+       height: 700px;
+    }
+}
+ 
+.card {
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 250px;
+    background-color: #292929;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    font-size: 16px;   
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+ 
+.icon {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width:80px;
+    background: linear-gradient(90deg, var(--yellow) 0%, var(--orange) 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+}
+ 
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+ 
+.card .title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+ 
+.card .text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 0;
+    max-height:0;
+    transition: all 0.3s ease;
+}
+ 
+.card:hover {
+    height: 380px;
+}
+ 
+.card:hover .info {
+    height: 100%;
+}
+ 
+.card:hover .text {
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height:560px;
+}
+ 
+.card:hover .icon {
+    background-position: -120px;
+    transition: all 0.3s ease;
+}
+ 
+.card:hover .icon i {
+   background: linear-gradient(90deg, var(--yellow), var(--orange));
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.tela2 {
+    height: 90vh;
+    width: 100%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.tela5{
+   width: 100%;
+   height: 80vh;
+   background-color: var(--orange);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer{
+   width: 80%;
+   height: 40vh;
+   display: flex;
+}
+.footer-img{
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+}
+.footer-img img{
+   width: 30rem;
+}
+.local{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+   color: white;
+}
+.local h1{
+   margin-bottom: 1rem;
+}
+.local h1::after{
+   content: '';
+   display: block;
+   width: 7rem;
+   height: 0.5rem;
+   background-color: var(--blue);
+   margin: 0 auto;
+   position: absolute;
+   border-radius: 10px;
+}
+
+/* tela 3 */
+
+.tela3{
+    height: 110vh;
+    width: 100%;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.serv h1{
+    font-size: 60px;
+    padding-top: 60px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--yellow);
+    width: 100%;
+    height: 20vh;
+}
+.ladoa, .ladob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+}
+.titleb{
+    font-size: 16px;
+}
+.subjecta {
+    margin-top: 20px;
+    word-wrap: break-word;
+    width: 550px;
+    font-size: 20px;
+}
