@@ -317,38 +317,85 @@ body {
 
 /* tela 3 */
 
-.tela3{
-    height: 110vh;
-    width: 100%;
-    background-color: var(--yellow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.serv h1{
-    font-size: 60px;
-    padding-top: 60px;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--yellow);
-    width: 100%;
-    height: 20vh;
-}
-.ladoa, .ladob{
+.space{
+    margin-bottom: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
+    gap: 30px;
+    width: 80%;
+}
+.caixa1{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    background-color: var(--yellow);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.caixa1 .imagem{
     width: 50%;
+    height: 100%;
 }
-.titleb{
-    font-size: 16px;
+.caixa1 .imagem img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-.subjecta {
-    margin-top: 20px;
-    word-wrap: break-word;
-    width: 550px;
+.caixa1 .text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.caixa1 .text h1{
     font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+}
+.caixa1 .text p{
+    font-size: 16px;
+    text-align: justify;
+    width: 80%;
+}
+.caixa2{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 35%;
+    height: 98vh;
+    background-color: #fe4001;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.caixa2 img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.caixa2 h1{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.caixa2 p{
+    width: 80%;
+    font-size: 16px;
+    text-align: justify;
+}
+.capsula{
+    display: flex;
+    gap: 20px;
+}
+.servicos{
+    display: flex;
+    justify-content: center;
+    color: white;
 }
